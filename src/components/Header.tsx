@@ -31,7 +31,7 @@ export const Header = () => {
               View My Work
             </Button>
             <Button
-              href="/workspaces/career-showcase-pro/src/components/pdf/CV.pdf"
+              href="/lovable-uploads/CV.pdf"
               download
               variant="outline" 
               size="lg"
