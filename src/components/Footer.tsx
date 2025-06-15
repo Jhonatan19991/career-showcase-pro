@@ -50,7 +50,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="/workspaces/career-showcase-pro/src/components/pdf/CV.pdf"
+                  href="/lovable-uploads/CV.pdf"
                   download
                   className="text-gray-400 hover:text-white transition-colors"
                 >
