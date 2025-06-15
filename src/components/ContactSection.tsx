@@ -82,7 +82,7 @@ export const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full"
-                    placeholder="your.email@example.com"
+                    placeholder="morales.hernandez.jhonatan00@gmail.com"
                   />
                 </div>
                 
@@ -163,6 +163,8 @@ export const ContactSection = () => {
                   variant="secondary" 
                   size="lg"
                   className="w-full bg-white text-blue-600 hover:bg-gray-100"
+                  href="/workspaces/career-showcase-pro/src/components/pdf/CV.pdf"
+                  download
                 >
                   Download CV (PDF)
                 </Button>
