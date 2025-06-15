@@ -23,7 +23,6 @@ const technologies = [
   "DBT"
 ];
 
-
 export const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -36,19 +35,29 @@ export const AboutSection = () => {
             
             <div className="prose prose-lg text-gray-600 mb-8">
               <p className="text-xl leading-relaxed mb-6">
-                I’m Jhonatan Morales, a final‑semester student of Data Engineering and Artificial Intelligence at the Universidad Autónoma de Occidente. I’m passionate about turning raw data into practical, real‑world solutions and constantly exploring new technologies and methodologies
+                I'm Jhonatan Morales, a final‑semester student of Data Engineering and Artificial Intelligence at the Universidad Autónoma de Occidente. I'm passionate about turning raw data into practical, real‑world solutions and constantly exploring new technologies and methodologies
               </p>
               
               <p className="text-lg leading-relaxed mb-6">
-                Through various academic and personal projects, I’ve strengthened my skills in data analysis, pipeline design, and information processing—always striving to deliver clean, efficient, and scalable results.
+                Through various academic and personal projects, I've strengthened my skills in data analysis, pipeline design, and information processing—always striving to deliver clean, efficient, and scalable results.
               </p>
-              
             </div>
-
-
           </div>
 
-          <div>
+          <div className="space-y-8">
+            {/* Profile Photo */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative">
+                <img
+                  src="/lovable-uploads/324ac4aa-b852-4d20-97cc-0bf6fe1f037d.png"
+                  alt="Jhonatan Steven Morales"
+                  className="w-48 h-48 rounded-full object-cover shadow-lg"
+                />
+                <div className="absolute inset-0 rounded-full bg-blue-600 opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
+              </div>
+            </div>
+
+            {/* Technologies */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Technologies & Tools</h3>
               <div className="flex flex-wrap gap-3">
@@ -62,8 +71,6 @@ export const AboutSection = () => {
                   </Badge>
                 ))}
               </div>
-              
-              
             </div>
           </div>
         </div>

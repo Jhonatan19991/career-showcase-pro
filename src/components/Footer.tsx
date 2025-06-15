@@ -29,6 +29,7 @@ export const Footer = () => {
                 { id: "home", label: "Home" },
                 { id: "projects", label: "Projects" },
                 { id: "about", label: "About Me" },
+                { id: "certificates", label: "Certificates" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <li key={item.id}>
