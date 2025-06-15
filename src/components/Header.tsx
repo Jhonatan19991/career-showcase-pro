@@ -30,7 +30,9 @@ export const Header = () => {
             >
               View My Work
             </Button>
-            <Button 
+            <Button
+              href="pdf/CV.pdf"
+              download
               variant="outline" 
               size="lg"
               className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 text-lg font-medium transition-all duration-300"

@@ -122,7 +122,7 @@ export const ContactSection = () => {
                 
                 <div className="space-y-4">
                   <a 
-                    href="https://linkedin.com/in/jhonatan-morales" 
+                    href="https://www.linkedin.com/in/jhonatan-morales-3a2314267/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-blue-50 transition-colors group"
@@ -135,7 +135,7 @@ export const ContactSection = () => {
                   </a>
                   
                   <a 
-                    href="https://github.com/jmorales" 
+                    href="https://github.com/Jhonatan19991" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-colors group"
@@ -147,18 +147,6 @@ export const ContactSection = () => {
                     </div>
                   </a>
                   
-                  <a 
-                    href="https://twitter.com/jmorales_data" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-4 p-4 rounded-lg hover:bg-blue-50 transition-colors group"
-                  >
-                    <Twitter className="h-6 w-6 text-blue-400 group-hover:scale-110 transition-transform" />
-                    <div>
-                      <div className="font-medium text-gray-900">Twitter</div>
-                      <div className="text-gray-600">Tech insights & updates</div>
-                    </div>
-                  </a>
                 </div>
               </CardContent>
             </Card>

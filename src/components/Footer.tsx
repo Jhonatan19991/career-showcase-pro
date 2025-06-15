@@ -49,7 +49,8 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="#" 
+                  href="pdf/CV.pdf"
+                  download
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Download Resume
@@ -57,7 +58,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://linkedin.com/in/jhonatan-morales" 
+                  href="www.linkedin.com/in/jhonatan-morales-3a2314267" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -67,7 +68,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://github.com/jmorales" 
+                  href="https://github.com/Jhonatan19991" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -77,7 +78,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="mailto:jhonatan.morales@email.com" 
+                  href="mailto:morales.hernandez.jhonatan00@gmail.com" 
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Email Me
