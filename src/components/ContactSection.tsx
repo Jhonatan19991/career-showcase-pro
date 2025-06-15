@@ -163,7 +163,7 @@ export const ContactSection = () => {
                   variant="secondary" 
                   size="lg"
                   className="w-full bg-white text-blue-600 hover:bg-gray-100"
-                  href="/workspaces/career-showcase-pro/src/components/pdf/CV.pdf"
+                  href="/lovable-uploads/CV.pdf"
                   download
                 >
                   Download CV (PDF)
