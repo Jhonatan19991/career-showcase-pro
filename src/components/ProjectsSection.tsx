@@ -15,14 +15,25 @@ const projects = [
   image: "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/1/0.png"
 }
 ,
-  {
-    id: 2,
-    title: "Machine Learning Prediction System",
-    date: "November 2024",
-    description: "Developed ML model for customer churn prediction achieving 92% accuracy. Deployed using MLOps best practices with automated retraining.",
-    technologies: ["Python", "TensorFlow", "MLflow", "Azure ML", "FastAPI", "MongoDB"],
-    image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=600&h=300&fit=crop",
-  },
+{
+  "id": 2,
+  "title": "ETL Pipeline: Spotify & Grammy Awards Data",
+  "date": "June 2025",
+  "description": "Designed and implemented a full ETL pipeline to integrate and analyze datasets from Spotify and the Grammy Awards. Built DAGs with Airflow for task orchestration, stored data in PostgreSQL, and automated reporting via Power BI. Also enabled CSV export to Google Drive using the Drive API.",
+  "technologies": [
+    "Python",
+    "Apache Airflow",
+    "PostgreSQL",
+    "Google Drive API",
+    "Power BI",
+    "SQLAlchemy",
+    "Jupyter",
+    "VirtualBox",
+    "Ubuntu"
+  ],
+  "image": "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/assets/Workflow2.png"
+}
+,
   {
     id: 3,
     title: "Cloud Data Warehouse Migration",
