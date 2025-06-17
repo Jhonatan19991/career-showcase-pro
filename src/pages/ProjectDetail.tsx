@@ -38,6 +38,8 @@ The workflow is modular and reusable, with environment configuration handled thr
     ],
     images: [
       "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/1/0.png",
+      "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/1/1.png",
+      "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/1/2.png",
     ],
     githubUrl: "https://github.com/Jhonatan19991/Worshop1",
     demoUrl: "",
