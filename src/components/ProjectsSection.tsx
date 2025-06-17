@@ -6,14 +6,15 @@ import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const projects = [
-  {
-    id: 1,
-    title: "Real-time Data Pipeline Architecture",
-    date: "December 2024",
-    description: "Built scalable ETL pipeline processing 1M+ daily transactions with 99.9% uptime. Reduced data processing time by 75% using Apache Spark and Kafka.",
-    technologies: ["Python", "Apache Spark", "Kafka", "PostgreSQL", "Docker", "AWS"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=300&fit=crop",
-  },
+{
+  id: 1,
+  title: "ETL - Workshop-01 - Data Engineer Interview",
+  date: "April 2024",
+  description: "Built a modular ETL pipeline to process 50k+ candidate records using Python, PostgreSQL, and Power BI. Enabled real-time dashboarding and data normalization.",
+  technologies: ["Python", "SQLAlchemy", "Jupyter", "PostgreSQL", "Power BI"],
+  image: "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/1/0.png"
+}
+,
   {
     id: 2,
     title: "Machine Learning Prediction System",
