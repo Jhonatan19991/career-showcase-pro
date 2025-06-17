@@ -52,9 +52,6 @@ The workflow is modular and reusable, with environment configuration handled thr
 };
 
 
-  // Add more projects as needed
-};
-
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
