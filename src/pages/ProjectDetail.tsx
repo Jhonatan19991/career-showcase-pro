@@ -37,9 +37,7 @@ The workflow is modular and reusable, with environment configuration handled thr
       "Published clear documentation for setup, execution, and analysis"
     ],
     images: [
-      "https://raw.githubusercontent.com/Jhonatan19991/Worshop1/main/img/workflow_diagram.png",
-      "https://raw.githubusercontent.com/Jhonatan19991/Worshop1/main/img/dashboard_1.png",
-      "https://raw.githubusercontent.com/Jhonatan19991/Worshop1/main/img/dashboard_2.png"
+      "https://github.com/Jhonatan19991/images/blob/main/page/1/0.png",
     ],
     githubUrl: "https://github.com/Jhonatan19991/Worshop1",
     demoUrl: "",
