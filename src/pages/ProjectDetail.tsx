@@ -45,9 +45,8 @@ The workflow is modular and reusable, with environment configuration handled thr
     demoUrl: "",
     blogUrl: "",
     artifacts: [
-      { name: "ETL Source Code", type: "Python", url: "https://github.com/Jhonatan19991/Worshop1/tree/main/src" },
-      { name: "Exploratory Analysis", type: "Notebook", url: "https://github.com/Jhonatan19991/Worshop1/tree/main/notebooks" },
-      { name: "Dataset", type: "CSV", url: "https://github.com/Jhonatan19991/Worshop1/blob/main/data/candidates.csv" }
+      { name: "DashBoard", type: "PowerBi", url: "https://github.com/Jhonatan19991/images/blob/main/page/1/0.png" },
+
     ]
   }
 };
