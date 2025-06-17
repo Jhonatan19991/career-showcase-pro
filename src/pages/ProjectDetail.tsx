@@ -8,61 +8,50 @@ import { ArrowLeft, Github, ExternalLink, Download, BarChart3 } from "lucide-rea
 // Mock project data - in a real app, this would come from an API or CMS
 const projectData = {
   1: {
-    title: "Real-time Data Pipeline Architecture",
-    date: "December 2024",
-    shortDescription: "Built scalable ETL pipeline processing 1M+ daily transactions with 99.9% uptime.",
-    fullDescription: `This project involved designing and implementing a comprehensive real-time data pipeline architecture to handle high-volume transaction data for a fintech company. The system processes over 1 million transactions daily with strict requirements for data accuracy, real-time processing, and fault tolerance.
+    title: "ETL - Workshop-01 - Data Engineer Interview",
+    date: "April 2024",
+    shortDescription: "Designed an ETL pipeline to manage 50k+ candidate records, integrating PostgreSQL and Power BI.",
+    fullDescription: `This project simulates a data engineer interview scenario where an end-to-end ETL process was implemented. The pipeline processes over 50,000 candidate records including personal information, experience level, applied position, and technical test scores.
 
-The architecture leverages Apache Kafka for real-time streaming, Apache Spark for distributed processing, and PostgreSQL for data storage. The entire system is containerized using Docker and deployed on AWS infrastructure with auto-scaling capabilities.
+The project uses Python and SQLAlchemy to normalize and store the data in a PostgreSQL database. Jupyter Notebooks were used for exploratory data analysis. Finally, Power BI was connected directly to the database to build interactive dashboards, allowing insights on candidate performance across different technologies and seniorities.
 
-Key achievements include reducing data processing latency from hours to seconds, implementing robust error handling and data quality checks, and achieving 99.9% system uptime through comprehensive monitoring and alerting.`,
-    technologies: ["Python", "Apache Spark", "Kafka", "PostgreSQL", "Docker", "AWS", "Terraform", "Prometheus"],
+The workflow is modular and reusable, with environment configuration handled through a .env file and project dependencies managed via a virtual environment.`,
+    technologies: ["Python", "Jupyter", "SQLAlchemy", "PostgreSQL", "Power BI"],
     challenges: [
-      "Handling peak loads of 10,000+ transactions per second",
-      "Ensuring data consistency across distributed systems",
-      "Implementing real-time fraud detection capabilities",
-      "Maintaining system performance during traffic spikes"
+      "Cleaning and transforming raw candidate data with missing values",
+      "Designing normalized relational schemas for PostgreSQL",
+      "Ensuring proper database connection and credential management",
+      "Creating meaningful visuals with dynamic filtering in Power BI"
     ],
     solutions: [
-      "Implemented horizontal scaling with Kubernetes orchestration",
-      "Used distributed consensus algorithms for data consistency",
-      "Integrated ML models for real-time anomaly detection",
-      "Deployed auto-scaling policies based on queue depth metrics"
+      "Built transformation scripts in Python using pandas and SQLAlchemy",
+      "Used .env files to securely manage PostgreSQL credentials",
+      "Created modular ETL pipeline with separate folders for data, src, notebooks, and scripts",
+      "Connected Power BI to PostgreSQL for real-time dashboarding"
     ],
     results: [
-      "75% reduction in data processing time",
-      "99.9% system uptime achieved",
-      "50% reduction in infrastructure costs",
-      "Real-time fraud detection with 95% accuracy"
+      "Successfully processed and stored 50k+ records in PostgreSQL",
+      "Improved data clarity through normalization and transformation",
+      "Built a functional Power BI dashboard based on live database connection",
+      "Published clear documentation for setup, execution, and analysis"
     ],
     images: [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop"
+      "https://raw.githubusercontent.com/Jhonatan19991/Worshop1/main/img/workflow_diagram.png",
+      "https://raw.githubusercontent.com/Jhonatan19991/Worshop1/main/img/dashboard_1.png",
+      "https://raw.githubusercontent.com/Jhonatan19991/Worshop1/main/img/dashboard_2.png"
     ],
-    dashboards: [
-      {
-        title: "Real-time Transaction Monitoring",
-        description: "Dashboard showing live transaction processing metrics, throughput, and system health indicators.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
-        tools: ["Grafana", "Prometheus", "Kafka"]
-      },
-      {
-        title: "Data Quality Analytics",
-        description: "Comprehensive view of data quality metrics, error rates, and anomaly detection results.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-        tools: ["Power BI", "Python", "SQL"]
-      }
-    ],
-    githubUrl: "https://github.com/jmorales/realtime-pipeline",
-    demoUrl: "https://pipeline-demo.jmorales.dev",
-    blogUrl: "https://blog.jmorales.dev/realtime-pipeline-architecture",
+    githubUrl: "https://github.com/Jhonatan19991/Worshop1",
+    demoUrl: "",
+    blogUrl: "",
     artifacts: [
-      { name: "Architecture Diagram", type: "PDF", url: "#" },
-      { name: "Performance Benchmarks", type: "Excel", url: "#" },
-      { name: "Code Samples", type: "ZIP", url: "#" }
+      { name: "ETL Source Code", type: "Python", url: "https://github.com/Jhonatan19991/Worshop1/tree/main/src" },
+      { name: "Exploratory Analysis", type: "Notebook", url: "https://github.com/Jhonatan19991/Worshop1/tree/main/notebooks" },
+      { name: "Dataset", type: "CSV", url: "https://github.com/Jhonatan19991/Worshop1/blob/main/data/candidates.csv" }
     ]
-  },
+  }
+};
+
+
   // Add more projects as needed
 };
 
