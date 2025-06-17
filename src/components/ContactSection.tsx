@@ -32,6 +32,15 @@ export const ContactSection = () => {
     });
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/CV.pdf';
+    link.download = 'CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
@@ -160,11 +169,10 @@ export const ContactSection = () => {
                   Get a comprehensive overview of my experience, skills, and achievements.
                 </p>
                 <Button 
+                  onClick={handleDownloadCV}
                   variant="secondary" 
                   size="lg"
                   className="w-full bg-white text-blue-600 hover:bg-gray-100"
-                  href="/lovable-uploads/CV.pdf"
-                  download
                 >
                   Download CV (PDF)
                 </Button>

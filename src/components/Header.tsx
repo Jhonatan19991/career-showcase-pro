@@ -7,6 +7,15 @@ export const Header = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/CV.pdf';
+    link.download = 'CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="container mx-auto px-6 text-center">
@@ -31,8 +40,7 @@ export const Header = () => {
               View My Work
             </Button>
             <Button
-              href="/lovable-uploads/CV.pdf"
-              download
+              onClick={handleDownloadCV}
               variant="outline" 
               size="lg"
               className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 text-lg font-medium transition-all duration-300"

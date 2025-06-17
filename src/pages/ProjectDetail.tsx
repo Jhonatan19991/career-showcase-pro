@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Github, ExternalLink, Download } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, Download, BarChart3 } from "lucide-react";
 
 // Mock project data - in a real app, this would come from an API or CMS
 const projectData = {
@@ -39,6 +39,20 @@ Key achievements include reducing data processing latency from hours to seconds,
       "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop"
+    ],
+    dashboards: [
+      {
+        title: "Real-time Transaction Monitoring",
+        description: "Dashboard showing live transaction processing metrics, throughput, and system health indicators.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+        tools: ["Grafana", "Prometheus", "Kafka"]
+      },
+      {
+        title: "Data Quality Analytics",
+        description: "Comprehensive view of data quality metrics, error rates, and anomaly detection results.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+        tools: ["Power BI", "Python", "SQL"]
+      }
     ],
     githubUrl: "https://github.com/jmorales/realtime-pipeline",
     demoUrl: "https://pipeline-demo.jmorales.dev",
@@ -137,8 +151,62 @@ export const ProjectDetail = () => {
         </div>
       </section>
 
+      {/* Dashboards Section */}
+      {project.dashboards && project.dashboards.length > 0 && (
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Project Dashboards</h2>
+                <p className="text-lg text-gray-600">
+                  Interactive dashboards and analytics created for this project
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {project.dashboards.map((dashboard, index) => (
+                  <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div className="relative">
+                      <img 
+                        src={dashboard.image} 
+                        alt={dashboard.title}
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <Badge className="bg-white/90 text-gray-800">
+                          <BarChart3 className="h-3 w-3 mr-1" />
+                          Dashboard
+                        </Badge>
+                      </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                        {dashboard.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed">
+                        {dashboard.description}
+                      </p>
+                      <div className="space-y-2">
+                        <p className="text-sm font-medium text-gray-700">Tools Used:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {dashboard.tools.map((tool) => (
+                            <Badge key={tool} variant="secondary" className="text-sm">
+                              {tool}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Content Sections */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             {/* Technologies */}
