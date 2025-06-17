@@ -48,7 +48,58 @@ The workflow is modular and reusable, with environment configuration handled thr
       { name: "DashBoard", type: "PowerBi", url: "https://github.com/Jhonatan19991/images/blob/main/page/1/0.png" },
 
     ]
-  }
+  },
+  2: {
+  "id": 2,
+  "title": "ETL - Workshop-02 - Spotify and Grammy Awards Data Process",
+  "date": "June 2025",
+  "shortDescription": "Built a modular ETL pipeline integrating Spotify and Grammy datasets using Airflow, PostgreSQL, and Power BI.",
+  "fullDescription": "This project processes and analyzes two major datasets—Spotify Tracks and Grammy Awards—through a full ETL pipeline. Data was extracted from Kaggle sources, transformed using Python and pandas, and loaded into a PostgreSQL database. Airflow orchestrated the workflow through a DAG, while Google Drive API enabled exporting processed CSVs to the cloud.\n\nThe database was queried live from Power BI to generate a dashboard offering insights on song attributes and award trends. The project runs in a virtual Ubuntu environment on VirtualBox, and is fully documented for reproducibility.",
+  "technologies": [
+    "Python",
+    "Apache Airflow",
+    "PostgreSQL",
+    "Google Drive API",
+    "Power BI",
+    "SQLAlchemy",
+    "Jupyter",
+    "VirtualBox",
+    "Ubuntu"
+  ],
+  "challenges": [
+    "Combining and cleaning two heterogeneous datasets (Spotify and Grammy)",
+    "Managing task dependencies and scheduling with Airflow DAGs",
+    "Setting up PostgreSQL for external VM access",
+    "Exporting data securely to Google Drive via API"
+  ],
+  "solutions": [
+    "Wrote modular ETL scripts in Python using pandas and SQLAlchemy",
+    "Created Airflow DAGs for orchestrated multi-source data pipelines",
+    "Configured PostgreSQL and firewall settings for VM connectivity",
+    "Used Google Drive API and service account for automated file uploads"
+  ],
+  "results": [
+    "Integrated and stored two large datasets into a relational PostgreSQL database",
+    "Automated ETL process with Airflow running on a virtual machine",
+    "Built an interactive Power BI dashboard based on live database queries",
+    "CSV files with final outputs were uploaded to Google Drive successfully"
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/assets/Workflow2.png",
+    "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/2/0.png"
+  ],
+  "githubUrl": "https://github.com/Jhonatan19991/Workshop-2",
+  "demoUrl": "",
+  "blogUrl": "",
+  "artifacts": [
+    {
+      "name": "DashBoard",
+      "type": "PowerBI",
+      "url": "https://uao-my.sharepoint.com/:u:/g/personal/jhonatan_morales_uao_edu_co/EVMN1JxziyRDkHWR05eCBBMBulXWNpx0aMHF69z_3JxO1w?e=dYMbx9"
+    }
+  ]
+}
+
 };
 
 export const ProjectDetail = () => {
