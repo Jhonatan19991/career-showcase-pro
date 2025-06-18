@@ -38,7 +38,7 @@ const projects = [
   "id": 3,
   "title": "ETL Pipeline: World Happiness Analysis and Prediction",
   "date": "Oct 2024",
-  "description": "Developed a complete ETL pipeline and real-time prediction system using the World Happiness Report data (2015–2019). Performed exploratory data analysis, trained a predictive model, and deployed a Kafka-based streaming pipeline that predicts happiness scores on the fly. Results were stored in PostgreSQL and evaluated using Jupyter notebooks. The environment was managed with Docker and run inside a VirtualBox VM on Ubuntu.",
+  "description": "Built a real-time ETL and prediction system using World Happiness data (2015–2019), including EDA, model training, Kafka streaming, PostgreSQL storage, and deployment in a Dockerized Ubuntu VM.",
   "technologies": [
     "Python",
     "Apache Kafka",
@@ -56,7 +56,7 @@ const projects = [
   "id": 4,
   "title": "ETL Pipeline: Cardiovascular Health & Mortality Analysis",
   "date": "Nov 2024",
-  "description": "Built a complete ETL pipeline integrating a health examination dataset and a global mortality dataset. The system orchestrates data ingestion, transformation, and storage using Apache Airflow and PostgreSQL. Real-time metrics from the fact table are streamed via Apache Kafka to a Power BI dashboard. The project includes data validation with Great Expectations and is fully dockerized for cross-environment deployment. All development occurred inside a Ubuntu-based virtual machine.",
+  "description": "Developed a dockerized ETL pipeline with Airflow, Kafka, and PostgreSQL to process health and mortality data, stream real-time metrics to Power BI, and validate data with Great Expectations in a Ubuntu VM",
   "technologies": [
     "Python",
     "Apache Kafka",
@@ -75,7 +75,7 @@ const projects = [
   "id": 5,
   "title": "Video Ball Tracker & Goal Scoring System",
   "date": "June 2025",
-  "description": "Developed a computer vision system using YOLOv11 to automatically detect balls and goals in futsal match videos. The system performs object detection, ball tracking (with OpenCV CSRT when detection fails), and visual annotations including bounding boxes, grids, and text. It assigns scores based on the ball's position within a 3x3 goal grid, mimicking the Massey Futsal Shooting Test. Outputs include an annotated video and a printed scoring message. The solution is designed for performance evaluation in sports environments.",
+  "description": "Built a YOLOv11-based computer vision system for futsal videos to detect balls/goals, track the ball, and score shots using a 3x3 goal grid, producing annotated videos for sports performance analysis.",
   "technologies": [
     "Python",
     "OpenCV",
