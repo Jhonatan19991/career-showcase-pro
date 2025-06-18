@@ -135,8 +135,8 @@ The workflow is modular and reusable, with environment configuration handled thr
     "Demonstrated successful real-time data analysis capabilities in a containerized environment"
   ],
   "images": [
-    "https://raw.githubusercontent.com/Jhonatan19991/images/main/assets/Workflow3.png",
-    "https://raw.githubusercontent.com/Jhonatan19991/images/main/page/3/0.png"
+    "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/assets/Workflow3.png",
+
   ],
   "githubUrl": "https://github.com/Jhonatan19991/Workshop-3",
   "demoUrl": "",
