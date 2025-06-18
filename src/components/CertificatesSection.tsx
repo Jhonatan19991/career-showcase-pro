@@ -11,6 +11,14 @@ const certificates = [
     color: "bg-orange-100 text-orange-800 border-orange-200",
     url: "https://credentials.databricks.com/34481c4c-e049-426c-9588-34edffb1e3aa#acc.RCkBi3up" // ← replace with your actual cert URL
   },
+    {
+    title: "Microsoft Certified: Fabric Data Engineer Associate",
+    issuer: "Microsoft",
+    date: "Jun 2025",
+    type: "certification",
+    color: "bg-blue-100 text-blue-800 border-blue-200",
+    url: "https://learn.microsoft.com/en-us/users/jhonatanstevenmoraleshernandez-4646/credentials/5727dfcbcb62defd?ref=https%3A%2F%2Fwww.linkedin.com%2F" // ← replace with your YouTube link
+  },
   {
     title: "Microsoft Certified: Azure Data Fundamentals",
     issuer: "Microsoft",
@@ -35,7 +43,8 @@ const certificates = [
     color: "bg-yellow-100 text-yellow-800 border-yellow-200",
     description: "Highest GPA in the program",
     url: "https://www.youtube.com/live/TIcR-FuruHA?si=Dl_4Fepf2VHVPsHk&t=2180" // ← replace with your YouTube link
-  }
+  },
+  
 ];
 
 export const CertificatesSection = () => {
