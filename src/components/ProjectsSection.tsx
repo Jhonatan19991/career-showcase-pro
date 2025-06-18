@@ -70,7 +70,23 @@ const projects = [
     "Ubuntu"
   ],
   "image": "https://raw.githubusercontent.com/caroldvarela/images/refs/heads/main/Project-etl.png"
+},
+{
+  "id": 5,
+  "title": "Video Ball Tracker & Goal Scoring System",
+  "date": "June 2025",
+  "description": "Developed a computer vision system using YOLOv11 to automatically detect balls and goals in futsal match videos. The system performs object detection, ball tracking (with OpenCV CSRT when detection fails), and visual annotations including bounding boxes, grids, and text. It assigns scores based on the ball's position within a 3x3 goal grid, mimicking the Massey Futsal Shooting Test. Outputs include an annotated video and a printed scoring message. The solution is designed for performance evaluation in sports environments.",
+  "technologies": [
+    "Python",
+    "OpenCV",
+    "NumPy",
+    "YOLOv11",
+    "PyTorch",
+    "Ultralytics"
+  ],
+  "image": "https://www.researchgate.net/profile/Ajmol-Ali/publication/291516917/figure/fig1/AS:324798317121536@1454449361371/Schematic-representation-of-the-Massey-Futsal-Shooting-Test-MFST.png"
 }
+
 
 
 ];
