@@ -18,6 +18,24 @@ interface ProjectHeroProps {
 export const ProjectHero = ({ project }: ProjectHeroProps) => {
   const navigate = useNavigate();
 
+  const handleGithubClick = () => {
+    if (project.githubUrl) {
+      window.open(project.githubUrl, '_blank');
+    }
+  };
+
+  const handleDemoClick = () => {
+    if (project.demoUrl) {
+      window.open(project.demoUrl, '_blank');
+    }
+  };
+
+  const handleBlogClick = () => {
+    if (project.blogUrl) {
+      window.open(project.blogUrl, '_blank');
+    }
+  };
+
   return (
     <>
       {/* Navigation */}
@@ -48,19 +66,28 @@ export const ProjectHero = ({ project }: ProjectHeroProps) => {
             
             <div className="flex flex-wrap justify-center gap-4">
               {project.githubUrl && (
-                <Button className="bg-gray-900 hover:bg-gray-800">
+                <Button 
+                  className="bg-gray-900 hover:bg-gray-800"
+                  onClick={handleGithubClick}
+                >
                   <Github className="h-4 w-4 mr-2" />
                   View Code
                 </Button>
               )}
               {project.demoUrl && (
-                <Button variant="outline">
+                <Button 
+                  variant="outline"
+                  onClick={handleDemoClick}
+                >
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Live Demo
                 </Button>
               )}
               {project.blogUrl && (
-                <Button variant="outline">
+                <Button 
+                  variant="outline"
+                  onClick={handleBlogClick}
+                >
                   Read Blog Post
                 </Button>
               )}
