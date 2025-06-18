@@ -236,8 +236,8 @@ The workflow is modular and reusable, with environment configuration handled thr
   "images": [
     "https://www.researchgate.net/profile/Ajmol-Ali/publication/291516917/figure/fig1/AS:324798317121536@1454449361371/Schematic-representation-of-the-Massey-Futsal-Shooting-Test-MFST.png"
   ],
-  "githubUrl": "https://github.com/Jhonatan19991/video-ball-tracker",
-  "demoUrl": "https://your-demo-site-url.com", 
+  "githubUrl": "https://github.com/Jhonatan19991/Analisis-del-Rendimiento-en-Jugadores-de-Futsal-Utilizando-Vision-Computacional",
+  "demoUrl": "https://futsal-shot-seeker.lovable.app/", 
   "blogUrl": "",
   "artifacts": [
     {
@@ -288,7 +288,7 @@ The workflow is modular and reusable, with environment configuration handled thr
     "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/Housing-images/housing.drawio.png",
     "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/Housing-images/ADF-PipeLine.png"
   ],
-  "githubUrl": "https://github.com/your-username/housing-retail-pipeline",
+  "githubUrl": "https://github.com/Jhonatan19991/housing-retail-pipeline",
   "demoUrl": "",
   "blogUrl": "",
   "artifacts": [
