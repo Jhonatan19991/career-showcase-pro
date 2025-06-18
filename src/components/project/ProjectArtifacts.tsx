@@ -12,6 +12,11 @@ interface ProjectArtifactsProps {
 }
 
 export const ProjectArtifacts = ({ artifacts }: ProjectArtifactsProps) => {
+  // Don't render the section if there are no artifacts
+  if (!artifacts || artifacts.length === 0) {
+    return null;
+  }
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
@@ -25,6 +30,8 @@ export const ProjectArtifacts = ({ artifacts }: ProjectArtifactsProps) => {
                     key={index} 
                     variant="outline" 
                     className="h-auto p-4 flex flex-col items-start"
+                    onClick={() => artifact.url && window.open(artifact.url, '_blank')}
+                    disabled={!artifact.url}
                   >
                     <div className="flex items-center mb-2">
                       <Download className="h-4 w-4 mr-2" />
