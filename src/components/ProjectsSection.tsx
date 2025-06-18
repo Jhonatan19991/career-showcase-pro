@@ -85,7 +85,27 @@ const projects = [
     "Ultralytics"
   ],
   "image": "https://www.researchgate.net/profile/Ajmol-Ali/publication/291516917/figure/fig1/AS:324798317121536@1454449361371/Schematic-representation-of-the-Massey-Futsal-Shooting-Test-MFST.png"
+},
+{
+  "id": 6,
+  "title": "Housing Retail Pipeline with Airflow and Azure",
+  "date": "June 2025",
+  "description": "Developed a hybrid data pipeline architecture for housing retail analytics using Apache Airflow for local orchestration and Azure Data Factory for cloud deployment, with Databricks integration for scalable ETL and EDA workflows.",
+  "technologies": [
+    "Python",
+    "Apache Airflow",
+    "Azure Data Factory",
+    "Azure Databricks",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "SQLAlchemy",
+    "Azure SDK"
+  ],
+  "image": "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/Housing-images/housing.drawio.png"
 }
+
 
 
 
