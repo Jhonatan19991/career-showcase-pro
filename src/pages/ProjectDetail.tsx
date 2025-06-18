@@ -246,7 +246,60 @@ The workflow is modular and reusable, with environment configuration handled thr
       "url": "https://futsal-shot-seeker.lovable.app/"
     }
   ]
+},
+6: {
+  "id": 6,
+  "title": "🏠 Housing Retail Pipeline with Airflow and Azure",
+  "date": "June 2025",
+  "shortDescription": "Hybrid ETL pipeline for housing retail data using Apache Airflow and Azure Data Factory, with Databricks for scalable processing and analysis.",
+  "fullDescription": "This project implements an automated data pipeline for extracting, transforming, and analyzing housing retail data. The architecture combines local development using Apache Airflow with cloud orchestration via Azure Data Factory. Data is processed using Azure Databricks notebooks, enabling scalable transformations and exploratory data analysis (EDA).\n\nThe pipeline integrates data from various sources, performs data quality checks, and generates insights using visualizations. It supports both batch and streaming data processing scenarios and provides monitoring, scheduling, and lineage tracking through Azure services.",
+  "technologies": [
+    "Python",
+    "Apache Airflow",
+    "Azure Data Factory",
+    "Azure Databricks",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "SQLAlchemy",
+    "Azure SDK",
+    "Jupyter"
+  ],
+  "challenges": [
+    "Coordinating hybrid orchestration between local and cloud environments",
+    "Ensuring data consistency and validation across stages",
+    "Optimizing Databricks transformations for large-scale datasets",
+    "Managing secure connections and credentials across Azure services"
+  ],
+  "solutions": [
+    "Built modular DAGs in Airflow for local development and testing",
+    "Used ADF pipelines to schedule and manage cloud workflows",
+    "Integrated Databricks notebooks for scalable ETL and EDA tasks",
+    "Configured Azure Key Vault and Storage for secure access and data persistence"
+  ],
+  "results": [
+    "Achieved seamless integration between local and cloud data workflows",
+    "Automated ingestion and transformation of housing retail data",
+    "Enabled scalable and interactive data analysis through Databricks",
+    "Improved visibility into data operations using monitoring tools in ADF"
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/Housing-images/housing.drawio.png",
+    "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/Housing-images/ADF-PipeLine.png"
+  ],
+  "githubUrl": "https://github.com/your-username/housing-retail-pipeline",
+  "demoUrl": "",
+  "blogUrl": "",
+  "artifacts": [
+    {
+      "name": "Architecture Diagram",
+      "type": "Image",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate/data-pipeline-with-azure-data-factory/media/architecture-diagram.png"
+    }
+  ]
 }
+
 
 };
 
