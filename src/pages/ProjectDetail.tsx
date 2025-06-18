@@ -148,7 +148,7 @@ The workflow is modular and reusable, with environment configuration handled thr
       "url": ""
     }
   ]
-}
+},
 4: {
   "id": 4,
   "title": "ETL - Cardiovascular Health and Mortality Streaming Analysis",
@@ -192,7 +192,7 @@ The workflow is modular and reusable, with environment configuration handled thr
   "githubUrl": "https://github.com/Jhonatan19991/end-to-end-project",
   "demoUrl": "",
   "blogUrl": ""
-}
+},
 
 
 };
