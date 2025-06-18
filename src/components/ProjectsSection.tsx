@@ -50,7 +50,7 @@ const projects = [
     "VirtualBox",
     "Ubuntu"
   ],
-  "image": "https://raw.githubusercontent.com/Jhonatan19991/images/main/assets/Workflow3.png"
+  "image": "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/assets/Workflow3.png"
 },
 
 ];
