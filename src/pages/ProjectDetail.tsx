@@ -98,7 +98,58 @@ The workflow is modular and reusable, with environment configuration handled thr
       "url": "https://uao-my.sharepoint.com/:u:/g/personal/jhonatan_morales_uao_edu_co/EVMN1JxziyRDkHWR05eCBBMBulXWNpx0aMHF69z_3JxO1w?e=dYMbx9"
     }
   ]
+},
+3: {
+  "id": 3,
+  "title": "ETL - Workshop-03 - World Happiness Analysis and Prediction",
+  "date": "June 2025",
+  "shortDescription": "Designed a real-time ETL and prediction pipeline using Kafka, PostgreSQL, and scikit-learn to analyze global happiness trends.",
+  "fullDescription": "This project analyzes World Happiness data (2015–2019) using an end-to-end ETL and predictive modeling workflow. The pipeline performs data extraction, transformation, and streaming using Apache Kafka. A trained regression model predicts happiness scores in real time, and results are stored in a PostgreSQL database.\n\nThe project was developed within a VirtualBox Ubuntu VM and deployed using Docker. It includes Jupyter notebooks for exploratory data analysis and model evaluation. Kafka consumers and producers were built to simulate real-time data flow, enabling dynamic insights into global happiness indicators.",
+  "technologies": [
+    "Python",
+    "Apache Kafka",
+    "PostgreSQL",
+    "SQLAlchemy",
+    "Jupyter",
+    "scikit-learn",
+    "Docker",
+    "VirtualBox",
+    "Ubuntu"
+  ],
+  "challenges": [
+    "Processing and merging multi-year happiness datasets with different structures",
+    "Implementing real-time data ingestion with Kafka producers and consumers",
+    "Training and deploying a regression model for continuous streaming predictions",
+    "Configuring PostgreSQL access from a virtual machine environment"
+  ],
+  "solutions": [
+    "Standardized and cleaned datasets from 2015 to 2019 using pandas transformations",
+    "Set up Kafka pipeline with producers sending data and consumers handling predictions",
+    "Trained a machine learning model using scikit-learn and integrated it into the stream",
+    "Used Docker and VirtualBox for isolated, reproducible development and deployment"
+  ],
+  "results": [
+    "Built a fully working streaming ETL pipeline from CSV ingestion to live prediction storage",
+    "Achieved a model performance explaining 92% of the data variance (R² score)",
+    "Enabled PostgreSQL-based storage of predictions for downstream use and visualization",
+    "Demonstrated successful real-time data analysis capabilities in a containerized environment"
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/Jhonatan19991/images/main/assets/Workflow3.png",
+    "https://raw.githubusercontent.com/Jhonatan19991/images/main/page/3/0.png"
+  ],
+  "githubUrl": "https://github.com/Jhonatan19991/Workshop-3",
+  "demoUrl": "",
+  "blogUrl": "",
+  "artifacts": [
+    {
+      "name": "Model & Notebooks",
+      "type": "Jupyter",
+      "url": ""
+    }
+  ]
 }
+
 
 };
 
