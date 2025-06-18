@@ -69,7 +69,7 @@ const projects = [
     "Power BI",
     "Ubuntu"
   ],
-  "image": "https://raw.githubusercontent.com/alej0909/ETL-1/main/assets/Dashboard-streaming.png"
+  "image": "https://raw.githubusercontent.com/caroldvarela/images/refs/heads/main/Project-etl.png"
 }
 
 
