@@ -197,7 +197,57 @@ The workflow is modular and reusable, with environment configuration handled thr
         "url": ""
       }
     ]
-  }
+  },
+  5:{
+  "id": 5,
+  "title": "⚽ Video Ball Tracker & Goal Scoring System",
+  "date": "June 2025",
+  "shortDescription": "Computer vision system to detect goals and score futsal shots using YOLOv11 and OpenCV, with a web app for player feedback.",
+  "fullDescription": "This project analyzes futsal match videos using a YOLOv11-based model to detect the ball and goal in each frame. The system tracks the ball when detection fails and overlays visual annotations like bounding boxes, object labels, and a 3x3 goal grid for shot scoring. The final score is calculated based on where the ball enters the goal.\n\nA web application was also developed, allowing players or coaches to upload videos and automatically receive feedback on scoring and shot accuracy. This solution aims to enhance the Massey Futsal Shooting Test evaluation process.",
+  "technologies": [
+    "Python",
+    "OpenCV",
+    "NumPy",
+    "YOLOv11",
+    "PyTorch",
+    "Ultralytics",
+    "Flask",
+    "HTML/CSS",
+    "Docker"
+  ],
+  "challenges": [
+    "Detecting fast-moving balls in low-resolution frames",
+    "Tracking the ball accurately when detection fails",
+    "Mapping ball positions to a dynamic 3x3 goal grid",
+    "Deploying a user-friendly interface for video uploads and feedback"
+  ],
+  "solutions": [
+    "Trained YOLOv11 model with custom datasets for futsal ball and goal detection",
+    "Used OpenCV's CSRT tracker for ball tracking across missed frames",
+    "Implemented logic to compute shot score from ball's entry into goal grid zones",
+    "Built a Flask-based web platform for users to upload videos and get scoring results"
+  ],
+  "results": [
+    "Generated annotated videos with visual insights and goal scoring",
+    "Enabled accurate evaluation of futsal shooting tests",
+    "Delivered a working end-to-end analysis and feedback platform",
+    "Improved accessibility by allowing players to analyze their own performance via the web"
+  ],
+  "images": [
+    "https://www.researchgate.net/profile/Ajmol-Ali/publication/291516917/figure/fig1/AS:324798317121536@1454449361371/Schematic-representation-of-the-Massey-Futsal-Shooting-Test-MFST.png"
+  ],
+  "githubUrl": "https://github.com/Jhonatan19991/video-ball-tracker",
+  "demoUrl": "https://your-demo-site-url.com", 
+  "blogUrl": "",
+  "artifacts": [
+    {
+      "name": "Page",
+      "type": "Page",
+      "url": "https://futsal-shot-seeker.lovable.app/"
+    }
+  ]
+}
+
 };
 
 export const ProjectDetail = () => {
