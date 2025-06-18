@@ -149,6 +149,50 @@ The workflow is modular and reusable, with environment configuration handled thr
     }
   ]
 }
+4: {
+  "id": 4,
+  "title": "ETL - Cardiovascular Health and Mortality Streaming Analysis",
+  "date": "June 2025",
+  "shortDescription": "Developed a real-time ETL and analytics pipeline using Airflow, Kafka, and PostgreSQL to analyze cardiovascular health and global mortality data.",
+  "fullDescription": "This project integrates two datasets—Cardio Train and global cause of deaths—to analyze patterns in cardiovascular disease. A full ETL pipeline was built using Apache Airflow to extract, transform, and load the data into a PostgreSQL database structured in a dimensional model. Kafka streams real-time metrics from the fact table to a Power BI dashboard, and a Python application acts as a consumer for streaming data.\n\nThe entire system is dockerized for reproducible deployment and was developed inside a virtual machine running Ubuntu. The project also includes data validation workflows using Great Expectations and exploratory data analysis through Jupyter Notebooks.",
+  "technologies": [
+    "Python",
+    "Apache Kafka",
+    "Apache Airflow",
+    "PostgreSQL",
+    "SQLAlchemy",
+    "Jupyter",
+    "Great Expectations",
+    "Docker",
+    "Power BI",
+    "Ubuntu"
+  ],
+  "challenges": [
+    "Merging health data with mortality data from different sources and formats",
+    "Coordinating ETL tasks using Airflow in a Dockerized environment",
+    "Implementing real-time data streaming between PostgreSQL and Power BI using Kafka",
+    "Ensuring data quality across different pipeline stages"
+  ],
+  "solutions": [
+    "Built a dimensional model combining structured datasets with standardized schemas",
+    "Designed DAGs in Airflow to automate and monitor ETL processes",
+    "Developed a Python Kafka consumer to feed real-time metrics into Power BI",
+    "Applied data validation using Great Expectations for quality assurance"
+  ],
+  "results": [
+    "Delivered a working end-to-end ETL pipeline with real-time streaming capabilities",
+    "Enabled real-time dashboard updates via Kafka and Power BI integration",
+    "Improved data consistency through validation and logging tools",
+    "Deployed the system across environments using Docker and Ubuntu"
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/caroldvarela/images/refs/heads/main/Project-etl.png",
+    "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/dashboard.png"
+  ],
+  "githubUrl": "https://github.com/Jhonatan19991/end-to-end-project",
+  "demoUrl": "",
+  "blogUrl": ""
+}
 
 
 };
