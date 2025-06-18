@@ -9,7 +9,7 @@ const projects = [
 {
   id: 1,
   title: "ETL - Workshop-01 - Data Engineer Interview",
-  date: "April 2024",
+  date: "Aug 2024",
   description: "Built a modular ETL pipeline to process 50k+ candidate records using Python, PostgreSQL, and Power BI. Enabled real-time dashboarding and data normalization.",
   technologies: ["Python", "SQLAlchemy", "Jupyter", "PostgreSQL", "Power BI"],
   image: "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/page/1/0.png"
@@ -18,7 +18,7 @@ const projects = [
 {
   "id": 2,
   "title": "ETL Pipeline: Spotify & Grammy Awards Data",
-  "date": "June 2025",
+  "date": "Sep 2024",
   "description": "Designed and implemented a full ETL pipeline to integrate and analyze datasets from Spotify and the Grammy Awards. Built DAGs with Airflow for task orchestration, stored data in PostgreSQL, and automated reporting via Power BI. Also enabled CSV export to Google Drive using the Drive API.",
   "technologies": [
     "Python",
@@ -37,7 +37,7 @@ const projects = [
 {
   "id": 3,
   "title": "ETL Pipeline: World Happiness Analysis and Prediction",
-  "date": "June 2025",
+  "date": "Oct 2024",
   "description": "Developed a complete ETL pipeline and real-time prediction system using the World Happiness Report data (2015–2019). Performed exploratory data analysis, trained a predictive model, and deployed a Kafka-based streaming pipeline that predicts happiness scores on the fly. Results were stored in PostgreSQL and evaluated using Jupyter notebooks. The environment was managed with Docker and run inside a VirtualBox VM on Ubuntu.",
   "technologies": [
     "Python",
@@ -52,6 +52,26 @@ const projects = [
   ],
   "image": "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/assets/Workflow3.png"
 },
+{
+  "id": 4,
+  "title": "ETL Pipeline: Cardiovascular Health & Mortality Analysis",
+  "date": "Nov 2024",
+  "description": "Built a complete ETL pipeline integrating a health examination dataset and a global mortality dataset. The system orchestrates data ingestion, transformation, and storage using Apache Airflow and PostgreSQL. Real-time metrics from the fact table are streamed via Apache Kafka to a Power BI dashboard. The project includes data validation with Great Expectations and is fully dockerized for cross-environment deployment. All development occurred inside a Ubuntu-based virtual machine.",
+  "technologies": [
+    "Python",
+    "Apache Kafka",
+    "Apache Airflow",
+    "PostgreSQL",
+    "SQLAlchemy",
+    "Jupyter",
+    "Great Expectations",
+    "Docker",
+    "Power BI",
+    "Ubuntu"
+  ],
+  "image": "https://raw.githubusercontent.com/alej0909/ETL-1/main/assets/Dashboard-streaming.png"
+}
+
 
 ];
 
