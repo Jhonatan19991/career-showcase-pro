@@ -34,14 +34,25 @@ const projects = [
   "image": "https://raw.githubusercontent.com/Jhonatan19991/images/refs/heads/main/assets/Workflow2.png"
 }
 ,
-  {
-    id: 3,
-    title: "Cloud Data Warehouse Migration",
-    date: "October 2024",
-    description: "Led migration of legacy on-premise data warehouse to cloud, improving query performance by 10x and reducing infrastructure costs by 40%.",
-    technologies: ["SQL", "Azure Synapse", "Power BI", "Terraform", "Python", "Airflow"],
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=300&fit=crop",
-  },
+{
+  "id": 3,
+  "title": "ETL Pipeline: World Happiness Analysis and Prediction",
+  "date": "June 2025",
+  "description": "Developed a complete ETL pipeline and real-time prediction system using the World Happiness Report data (2015–2019). Performed exploratory data analysis, trained a predictive model, and deployed a Kafka-based streaming pipeline that predicts happiness scores on the fly. Results were stored in PostgreSQL and evaluated using Jupyter notebooks. The environment was managed with Docker and run inside a VirtualBox VM on Ubuntu.",
+  "technologies": [
+    "Python",
+    "Apache Kafka",
+    "PostgreSQL",
+    "SQLAlchemy",
+    "Jupyter",
+    "scikit-learn",
+    "Docker",
+    "VirtualBox",
+    "Ubuntu"
+  ],
+  "image": "https://raw.githubusercontent.com/Jhonatan19991/images/main/assets/Workflow3.png"
+},
+
 ];
 
 export const ProjectsSection = () => {
