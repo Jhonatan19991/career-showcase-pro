@@ -5,21 +5,18 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/career-showcase-pro/", // 👈 MUY IMPORTANTE para GitHub Pages
-
+  base: mode === "production" ? "/career-showcase-pro/" : "/", // 👈 Desarrollo local vs GitHub Pages
+  server: {
+    host: true, // permite acceso desde LAN o IPv6
+    port: 8080,
+  },
   plugins: [
     react(),
     ...(mode === "development" ? [componentTagger()] : []),
   ],
-
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"), // alias para importar como @/components...
     },
-  },
-
-  server: {
-    host: true, // permite acceso desde LAN o IPv6
-    port: 8080,
   },
 }));
